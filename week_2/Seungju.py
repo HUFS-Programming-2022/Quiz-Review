@@ -19,7 +19,7 @@ from nltk import FreqDist
 """
 text5의 FreqDist를 fdist_5 라는 변수로 설정한다.
 text5에 있는 단어들을 lower을 이용해 소문자와 해주고 isalpha를 이용해 
-문자만을 걸러내여 clean_text5라는 변수에 저장한다.
+문자만을 걸러내어 clean_text5라는 변수에 저장한다.
 list comprehension 을 이용하여 text5의 단어들을 순회하여
 fdist_5를 이용해 4번 등장하는 단어만을 출력한다.
 이때 중복을 제거하기 위해 set으로 바꾸고 sorted 를 이용해 정렬한다.
