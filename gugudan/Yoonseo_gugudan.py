@@ -17,14 +17,14 @@ def gugudan():
 
             elif dan.isdigit():
                 dan = int(dan)
-                if dan > 9 or dan < 2:
-                    print('입력값은 2와 9 사이의 정수여야 합니다. 다시 확인해주세요.')
+                if dan > 9 or dan < 1:
+                    print('입력값은 1과 9 사이의 정수여야 합니다. 다시 확인해주세요.')
                     continue
                 else:
                     ask_number = False
                     confirmed = True
             else: # 숫자가 아닌 문자가 들어왔을 경우 되묻기
-                print('입력값은 2와 9 사이의 정수여야 합니다. 다시 확인해주세요.')
+                print('입력값은 1과 9 사이의 정수여야 합니다. 다시 확인해주세요.')
                 continue
                 
     def print_gugudan(start_dan, end_dan):
@@ -52,8 +52,8 @@ def gugudan():
                 print_gugudan(start_dan, end_dan)
                     
         elif menu == '2':
-            print('2단부터 몇 단까지 출력할까요? << q : 나가기 >>')
-            start_dan = 2
+            print('1단부터 몇 단까지 출력할까요? << q : 나가기 >>')
+            start_dan = 1
             check_dan()
             if confirmed:
                 end_dan = dan
