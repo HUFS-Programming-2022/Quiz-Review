@@ -71,7 +71,7 @@ def gugudan():
                     if confirmed:
                         end_dan = dan
                         if start_dan > end_dan:
-                            print('시작 단이 끝 단보다 클 수 없습니다. 다시 입력해주세요.')
+                            print('끝 단은 시작 단보다 작을 수 없습니다. 다시 입력해주세요.')
                             continue
                         else:
                             print_gugudan(start_dan, end_dan)
