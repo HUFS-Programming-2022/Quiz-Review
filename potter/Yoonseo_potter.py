@@ -69,7 +69,7 @@ for sent in word_in_sent:
                 words = word.split("_'") #split으로 인해 2차원 리스트가 되기 때문에 별개의 변수로 할당                
             else:
                 if word.endswith(punct):
-                    word = word[:-1] #단어 뒤에 붙은 특수문자 제거
+                    word = word[:-1] #단어 뒤에 붙은 특수문자 제거 #else로 따로 분리한 후 다시 if문을 쓴 이유: _'에서 분절이 돼야 하는데 _만 남고 분절이 안되기 때문
                 words = [word] #2차원리스트
     
             word_fixed.extend(words) #2차원리스트가 되지 않도록 extend
