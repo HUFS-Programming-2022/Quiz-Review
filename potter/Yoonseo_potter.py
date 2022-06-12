@@ -25,8 +25,8 @@ sent_list = [sent.strip() for sent in text.split('.')] #온점 기준 문장 분
 
 
 # 단어 분절하기---------------------------------------    
-word_list = ' '.join(sent_list).split() #문장을 join으로 통째로 하나의 문자열로 만들었다가 띄어쓰기를 기준으로 다시 단어 분절
-word_in_sent = [word.split() for word in sent_list] # 큰 리스트 안에 각 문장 별로 리스트화해서 단어 분절 넣기
+
+word_in_sent = [word.split() for word in sent_list] # 큰 리스트 안에 각 문장 별로 리스트화해서 단어 분절 넣기 [[단어, 단어, 단어](=문장1),[단어, 단어, 단어, 단어], ...] 형태
 
 word_replace = [[word.replace("can’t", "can not").replace("won’t", 'will not').replace("n’t", ' not')
                  .replace("in’", 'ing').replace('yeh', 'you').replace('yer','your').replace("C’mon", 'come on').replace("C’mere", 'come here')
