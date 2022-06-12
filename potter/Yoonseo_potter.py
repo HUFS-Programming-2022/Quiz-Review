@@ -32,8 +32,8 @@ word_replace = [[word.replace("can’t", "can not").replace("won’t", 'will not
                  .replace("in’", 'ing').replace('yeh', 'you').replace('yer','your').replace("C’mon", 'come on').replace("C’mere", 'come here')
                  .replace("G ’night", 'Good night').replace("o’clock", "o'clock").replace("o’", 'of').replace("myst’ry", 'mystery').replace("’", "_'")
                for word in sent] # ’가 단어 중간에 들어간 단어들은 밑에서 분절할 때 잘못 분절되기 때문에 미리 replace
-
                 for sent in word_in_sent] #예외 처리
+
 word_in_sent = [' '.join(sent).split() for sent in word_replace] #예외처리 한 문장별 단어 분절 리스트
 
 
