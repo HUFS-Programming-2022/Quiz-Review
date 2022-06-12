@@ -88,7 +88,7 @@ refined_word = [[word for word in sent
 refined_word = [w for w in refined_word if w] # 빈 문장 제거, 최종 토큰
 
 
-# requency distribution 만들고, top 50로 그림 그리기 ----------------------------------
+# frequency distribution 만들고, top 50로 그림 그리기 ----------------------------------
 
 uncased = [word.lower() for sent in refined_word for word in sent] #소문자화 후 1차원리스트로
 most_used = {key:value for key, value in fdist.most_common(50)} # TOP50
